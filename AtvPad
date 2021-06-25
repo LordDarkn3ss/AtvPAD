@@ -1,0 +1,97 @@
+//Questão 1
+
+var nome = "Victor";
+
+function Question1(a){
+    return helloName = ("Olá, "+a+"!");
+}
+
+console.log(Question1(nome));
+
+//Questão 2
+
+function Question2(v1,v2,Callback){console.log(Callback(v1,v2));}
+
+Question2(2,2,function(val1,val2){return val1 + val2;});
+Question2(2,2,function(val1,val2){return val1 * val2;});
+Question2(2,2,function(val1,val2){return val1 / val2;});
+
+
+
+//Questão 3
+
+function Question3(v1,Callback)
+{
+  return function(v2)
+  {
+    Callback(v1,v2)
+  }
+}
+
+var fInte = Question3(6,function(v1,v2){
+    
+  if(v1%v2 == 0)
+    {
+      return true;
+    }
+  else
+    {
+      return false;
+    }
+});
+
+console.log(Question3(2,5)); 
+
+
+//Questão 4
+
+var mes = 1;
+
+function Question4(d){
+    switch(d){
+        case 1:
+            return "Janeiro";
+        break;
+        case 2:
+            return "Fevereiro";
+        break;
+        case 3:
+            return "Março";
+        break;
+        case 4:
+            return "Abril";
+        break;
+        case 5:
+            return "Maio";
+        break;
+        case 6:
+            return "Junho";
+        break;
+        case 7:
+            return "Julho";
+        break;
+        case 8:
+            return "Agosto";
+        break;
+        case 9:
+            return "Setembro";
+        break;
+        case 10:
+            return "Outubro";
+        break;
+        case 11:
+            return "Novembro";
+        break;
+        case 12:
+            return "Dezembro";
+        break;
+    }   
+}
+console.log(Question4(mes));
+
+//Questão 5
+
+function Question5(v1,v2,Callback){console.log(Callback(v1,v2));}
+
+Question5(3,6,function(v1,v2){v1 > v2 ? true:false});
+Question5(3,6,function(v1,v2){v1 = v2 ? true:false});
